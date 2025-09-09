@@ -157,12 +157,12 @@ export default function DashboardPage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid gap-4 md:grid-cols-3">
-            <div>
+            {/* <div>
               <p className="text-sm font-medium text-muted-foreground">Last Seen</p>
               <p className="text-sm">
                 {status ? format(new Date(status.last_seen), 'PPp') : 'Never'}
               </p>
-            </div>
+            </div> */}
             <div>
               <p className="text-sm font-medium text-muted-foreground">Tamper Status</p>
               <Badge variant={status?.relay_status ? "default" : "destructive"}>
