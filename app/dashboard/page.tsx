@@ -12,7 +12,7 @@ import { useDeviceStatus, useAlerts } from "@/hooks/useDeviceStatus"
 import { format } from "date-fns"
 
 export default function DashboardPage() {
-  const deviceId = process.env.NEXT_PUBLIC_DEFAULT_DEVICE_ID || "METER 001"
+  const deviceId = process.env.NEXT_PUBLIC_DEFAULT_DEVICE_ID || "METER_001"
   const [selectedTimeRange, setSelectedTimeRange] = useState<'hourly' | 'daily'>('hourly')
   
   const { status, loading: statusLoading, isOnline, refetch: refetchStatus } = useDeviceStatus(deviceId)
