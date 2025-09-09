@@ -13,10 +13,10 @@ import {
   IconHelp,
   IconInnerShadowTop,
   IconListDetails,
+  IconPhone,
   IconReport,
   IconSearch,
   IconSettings,
-  IconUsers,
 } from "@tabler/icons-react"
 
 import { NavDocuments } from "@/components/nav-documents"
@@ -134,7 +134,7 @@ const data = {
     {
       title: "Contact Us",
       url: "#",
-      icon: Phone,
+      icon: IconPhone,
     },
   ],
   documents: [
